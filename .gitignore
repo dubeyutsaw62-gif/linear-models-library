@@ -1,0 +1,7 @@
+.env
+dataconfig.txt
+spam.csv
+*.pkl
+prompting.ipynb
+qrs.py
+spam_prototype.ipynb
