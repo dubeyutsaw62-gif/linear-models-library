@@ -18,8 +18,7 @@ t_x=np.hstack((np.ones((N, 1)) , test_X.reshape(N, -1)))
 
 X_transpose = X.T
 
-# np.linalg.inv computes the matrix inverse
-# np.dot or @ performs matrix multiplication
+
 beta = np.linalg.inv(X_transpose @ X) @ X_transpose @ y
 
 beta_0 = beta[0] # Intercept
