@@ -49,7 +49,7 @@ for i in range(iterations):
     gradient = (X.T @ errors) / N_train
     beta = beta - (learning_rate * gradient)
 
-print("=== MANUAL LOGISTIC REGRESSION RESULTS ===")
+print("MANUAL LOGISTIC REGRESSION RESULTS ")
 print(f"Optimized Intercept (beta_0): {beta[0]:.4f}")
 print(f"Optimized Feature Weights (beta_1 to n): {beta[1:]}\n")
 
@@ -60,7 +60,7 @@ predicted_classes = (test_probabilities >= 0.5).astype(int)
 misclassified = (test_y != predicted_classes).astype(int)
 empirical_risk = np.mean(misclassified)
 
-print("=== EVALUATION ON TEST DATA ===")
+print("EVALUATION ON TEST DATA")
 print(f"Total Test Cases: {N_test}")
 print(f"Number of Incorrect Classifications: {np.sum(misclassified)}")
 print(f"Empirical Risk (Misclassification Error Rate): {empirical_risk:.2%}")
